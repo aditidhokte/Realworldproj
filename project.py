@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix
 # Load dataset (example: diabetes.csv with columns like Glucose, BMI, Outcome)
 df = pd.read_csv("data.csv").dropna().drop_duplicates()
 print("Dataset Shape:", df.shape)
-print(df.head())
+print(df.head() )
 
 # Features (X) and Target (y)
 X = df[['Glucose', 'BMI']]   # choose relevant columns
